@@ -1,4 +1,5 @@
 import Header from '../header/Header'
+import Offer from '../offer/Offer'
 import './Wrapper.css'
 import Img from '../images/main-bgi.jpg'
 const Wrapper = () => {
@@ -8,6 +9,8 @@ const Wrapper = () => {
       style={{backgroundImage: `url(${Img})`}}  
     >
       <Header></Header>
+      <div className="line"></div>
+      <Offer></Offer>
     </div>
   )
 }

@@ -1,0 +1,21 @@
+.offer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  color: #fff;
+  margin: 0 auto;
+}
+.offer .offer-title {
+  font-weight: 500;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.offer .offer-heading {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 64px;
+  letter-spacing: 0em;
+  text-align: center;\margin-bottom: 40px;
+}

@@ -1,14 +1,19 @@
-import React from 'react'
-
+import './Header.css'
 const Header = () => {
-  const listNav = ['Главная','Наши проекты','Услуги','Новости','Контакты']
+  const listNav = [
+    {name: 'Главная',isActive: true},
+    {name: 'Наши проекты',isActive: false},
+    {name:'Услуги',isActive: false},
+    {name:'Новости',isActive: false},
+    {name:'Контакты',isActive: false}
+  ]
   return (
     <div className='header'>
       <nav>
         <ul className='navbar'>
           {listNav.map((item,ind) => (
-            <li key={ind}>
-              <a href="#">{item}</a>
+            <li className={`navbar__list ${item.isActive&&'active'}`} key={ind}>
+              <a className='navbar__list-item' href="#">{item.name}</a>
             </li>
           ))}
         </ul>
