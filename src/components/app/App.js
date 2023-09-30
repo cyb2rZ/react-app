@@ -1,5 +1,9 @@
 import Wrapper from '../wrapper/Wrapper';
+import Introduction from '../introduction/Introduction';
+import Team from '../team/Team';
 import Service from '../sevices/Service';
+import Empty from '../empty/Empty';
+import Project from '../projects/Project';
 import './App.css';
 
 function App() {
@@ -7,6 +11,10 @@ function App() {
     <div className="App">
       <Wrapper></Wrapper>
       <Service></Service>
+      <Project></Project>
+      <Team></Team>
+      <Empty></Empty>
+      <Introduction></Introduction>
     </div>
   );
 }
